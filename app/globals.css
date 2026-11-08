@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --alora-primary: #6366F1;
+  --alora-accent: #F59E0B;
+  --alora-dark: #172554;
+  --alora-light: #F8FAFC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tajawal', sans-serif;
+  background: var(--alora-light);
+  color: var(--alora-dark);
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--alora-primary);
+  color: white;
+}
+
+.container-main {
+  width: min(1200px, 92%);
+  margin-inline: auto;
+}
+
+.primary-button {
+  background: var(--alora-primary);
+  color: white;
+  border-radius: 14px;
+  padding: 14px 28px;
+  font-weight: 800;
+  transition: 0.25s;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
